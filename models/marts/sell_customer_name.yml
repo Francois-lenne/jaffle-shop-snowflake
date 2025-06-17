@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: sell_customer_name
+    description: >
+      Agrège le nombre de commandes passées par chaque client en joignant les tables
+      `stg_ecom__orders` et `stg_customers`.
+    columns:
+      - name: name_complete
+        description: Nom complet du client (prénom et nom).
